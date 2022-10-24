@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.popularmovie.MovieDescriptionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/movie_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                tools:layout_height="300dp"
+                tools:scaleType="centerCrop"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:text="Harry Porter"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/movie_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="Some awesome amazing description of movie"
+                tools:visibility="visible" />
+            <TextView
+                android:id="@+id/movie_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="65"
+                tools:visibility="visible" />
+            <TextView
+                android:id="@+id/movie_original_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="en"
+                tools:visibility="visible" />
+            <TextView
+                android:id="@+id/movie_original_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="second title"
+                tools:visibility="visible" />
+            <TextView
+                android:id="@+id/movie_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="20-1-22"
+                tools:visibility="visible" />
+            <TextView
+                android:id="@+id/movie_vote_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="#000000"
+                android:visibility="gone"
+                tools:text="200"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>

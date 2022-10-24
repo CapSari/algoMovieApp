@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieFragment">
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.davidsari.movieapp.ui.MovieFragment"
+        android:label="Movie List"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movieFragment_to_movieDescriptionFragment"
+            app:destination="@id/movieDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDescriptionFragment"
+        android:name="com.davidsari.movieapp.ui.popularmovie.MovieDescriptionFragment"
+        android:label="Movie Description"
+        tools:layout="@layout/fragment_movie_description">
+        <argument
+            android:name="backdropPath"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="posterPath"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="originalLanguage"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="originalTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="overview"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="releaseDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="voteCount"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+</navigation>
